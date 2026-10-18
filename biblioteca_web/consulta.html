@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Cadastro - Início</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Biblioteca Koji">
+      <span class="brand-icon">📙</span>
+      <span>Koji</span>
+    </a>
+
+    <form class="search" id="searchForm">
+      <label class="sr-only" for="searchInput">Buscar livros</label>
+      <select aria-label="Tipo de busca">
+        <option>Livros</option>
+        <option>Autores</option>
+        <option>Categorias</option>
+      </select>
+      <span class="search-icon">⌕</span>
+      <input id="searchInput" type="search" placeholder="Buscar na biblioteca">
+      <button type="submit" aria-label="Buscar">⌕</button>
+    </form>
+
+    <nav class="top-actions" aria-label="Atalhos">
+      <a href="#catalogo" title="Catálogo">☺</a>
+    </nav>
+  </header>
+
+  
+  
+   <nav class="main-nav" aria-label="Navegação principal">
+     <a href="index.html">INÍCIO</a>
+     <a href="consulta.html">CATÁLOGO</a>
+     <a href="cadastro.html">CADASTRAR LIVRO</a>
+   </nav>
+  
+
+  <main>
+
+    
+
+    <section class="panel catalog-panel" id="catalogo">
+      <div class="catalog-header">
+        <div>
+          <span class="section-kicker">SEU ACERVO</span>
+          <h2>Livros cadastrados</h2>
+          <p class="muted">Consulte e gerencie os títulos da biblioteca.</p>
+        </div>
+        <span class="catalog-count" id="catalogCount">0 livros</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Livro</th>
+              <th>Autor(a)</th>
+              <th>Ano de Publicação</th>
+              <th>Gênero</th>
+              <th>ISBN</th>
+              <th>Exemplares</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="bookTableBody">
+            <tr class="empty-row"><td colspan="6">Nenhum livro cadastrado ainda. Use o formulário acima para adicionar o primeiro!</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <a class="footer-brand" href="#inicio">▱ Koji</a>
+    <p>Biblioteca Koji · Sistema de cadastro de livros</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
