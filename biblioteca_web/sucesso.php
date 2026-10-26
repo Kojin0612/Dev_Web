@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aluno cadastrado</title>
+</head>
+<body>
+    <h1>Aluno cadastrado com sucesso!</h1>
+    <p>O cadastro foi gravado no banco de dados.</p>
+    <p><a href="index.html">Cadastrar outro aluno</a></p>
+    <p><a href="listar.php">Ver alunos cadastrados</a></p>
+</body>
+</html>
