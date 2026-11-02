@@ -86,7 +86,10 @@ function renderBooks() {
       <td><span class="category-tag">${escapeHTML(book.genero)}</span></td>
       <td>${escapeHTML(book.isbn || "—")}</td>
       <td>${Number(book.quantidade)}</td>
-      <td><button class="delete-button" type="button" data-delete="${escapeHTML(book.id)}">Excluir</button></td>
+      <td class="actions-cell">
+        <a class="edit-button" href="editar.php?id=${encodeURIComponent(book.id)}">Editar</a>
+        <button class="delete-button" type="button" data-delete="${escapeHTML(book.id)}">Excluir</button>
+      </td>
     </tr>
   `).join("");
 }

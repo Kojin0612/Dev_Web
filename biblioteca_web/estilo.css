@@ -192,3 +192,8 @@ footer p { margin: 0; }
   .catalog-count { margin-top: 10px; }
   footer { flex-wrap: wrap; padding: 20px; }
 }
+
+/* Botão Editar (adicionado ao final; nada acima foi alterado) */
+.actions-cell { white-space: nowrap; }
+.edit-button { display: inline-block; border: 1px solid #d8e2fc; background: #f0f4ff; color: var(--blue); border-radius: 6px; padding: 6px 9px; font-size: 11px; font-weight: 700; margin-right: 6px; cursor: pointer; }
+.edit-button:hover { background: #e1e9ff; }
